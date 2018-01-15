@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar estudiante</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/controlador_estudiantes.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+</head>
+<body>
+<div>
+
+    <nav >
+        <ul >
+            <li>
+                <a href="../index.html">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Estudiantes
+                </a>
+                <ul>
+                    <li><a  href="registrarEstudiante.html"><span>Registrar Estudiante</span></a></li>
+                    <li><a href="listaEstudiantes.html"><span>Lista de Estudiantes</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">
+                    Profesores
+                </a>
+                <ul>
+                    <li><a  href="registrarProfesor.html"><span>Registrar Profesor</span></a></li>
+                    <li><a href="listaProfesores.html"><span>Lista de Profesores</span></a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="materias" href="#">
+                    Materias
+                </a>
+                <ul>
+                    <li><a href="registrarMateria.html"><span>Registrar Materia</span></a></li>
+                    <li><a href="listaMaterias.html"><span>Lista de Materias</span> </a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="encargados" href="#">
+                    Encargados
+                </a>
+                <ul>
+                    <li><a  href="registrarEncargado.html"><span>Registrar Encargado</span></a></li>
+                    <li><a href="listaEncargado.html"><span>Lista de Encargados</span> </a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a class="pagos" href="#">
+                    Pagos
+                </a>
+                <ul>
+                    <li><a  href="registrarPago.html"><span>Registrar Pago</span></a></li>
+                    <li><a href="listaPagos.html"><span>Lista de Pagos</span> </a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+     <div class="wrap">
+         <h1 class="titulo">Registrar estudiante</h1>
+         <form onsubmit="return registrarEstudiante()">
+
+             <div class="formulario">
+                 <label for="Nombre_estudiante">Nombre</label>
+                 <input type="text" class="formControl" id="Nombre_estudiante" required>
+             </div>
+
+             <div class="formulario">
+                 <label for="Apellido1_estudiante">Apellido 1</label>
+                 <input type="text" class="formControl" id="Apellido1_estudiante" required>
+             </div>
+
+             <div class="formulario">
+                 <label for="encargado">Encargado</label>
+                 <input type="text" class="formControl" id="encargado" required>
+             </div>
+                 <div class="formulario">
+                     <label for="Tel_estudiante">Teléfono</label>
+                     <input type="text" class="formControl" id="Tel_estudiante" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="Direccion_estudiante">Dirección</label>
+                     <input type="text" class="formControl" id="Direccion_estudiante" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="emailE">Correo Electrónico</label>
+                     <input type="email" class="formControl" id="emailE" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="Experiencia_estudiante">Experiencia musical</label>
+                     <input type="text" class="formControl" id="Experiencia_estudiante" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="lugar_experiencia">Lugar de experiencia</label>
+                     <input type="text" class="formControl" id="lugar_experiencia" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="cursos_anteriores">Estudios realizados</label>
+                     <input type="text" class="formControl" id="cursos_anteriores" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="ingreso_Estudiante">Fecha de Ingreso</label>
+                     <input type="text" class="formControl" id="ingreso_Estudiante" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="cedula_Estudiante">Número de identificación</label>
+                     <input type="text" class="formControl" id="cedula_Estudiante" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="usuario">Usuario</label>
+                     <input type="text" class="formControl" id="usuario" required>
+                 </div>
+
+                 <div class="formulario">
+                     <label for="password">Contraseña</label>
+                     <input type="text" class="formControl" id="password" required>
+                 </div>
+
+             <button type="submit" class="btn btn-default">Registrar</button>
+         </form>
+<p id="mensaje"></p>
+     </div>
+</div>
+</div>
+</body>
+</html>

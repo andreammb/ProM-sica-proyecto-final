@@ -1,0 +1,210 @@
+body {
+    font-family: 'Lato', sans-serif, 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding: 20px 50px 150px;
+    font-size: 13px;
+    text-align: center;
+    background: teal;
+    color: white;
+    align-content: center;
+}
+
+.logo{
+width: 50%;
+    position: relative;
+}
+.contenedorinicio{
+    margin-top: 20%;
+    margin-bottom: 10rem;
+}
+#inicio {
+
+    background-position: center;
+    background-image: url("../img/fondo1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: teal;
+}
+nav {
+    position: fixed; /*Fixed ya que queremos que la posición sea en relación al navegador*/
+    top: 0; /*El valor 0 indica que va a quedar arriba de todo*/
+    left: 0; /*Para que el menu se ubique siempre en la parte izquierda de la pantalla*/
+    width: 100%; /*100% para que ocupe todo el ancho del navegador*/
+    z-index: 1;
+}
+
+ul {
+    text-align: left;
+    display: inline;
+    margin: 0;
+    padding: 15px 4px 17px 0;
+    list-style: none;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+ul li {
+    font: bold 12px/18px sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+ul li:hover {
+    background: #555;
+    color: #fff;
+}
+ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 155px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+}
+ul li ul li {
+    background: #555;
+    display: block;
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+
+}
+span{
+    color: #fff;
+}
+
+a:link
+{
+
+    text-decoration:none;
+}
+a:-webkit-any-link {
+
+    color: #555;
+    cursor: pointer;
+
+}
+
+
+h1 {
+    font-size: 40px;
+    margin-top: 80px;
+    padding: 0px;
+}
+h3 {
+    margin: 0px;
+    padding: 0px;
+    color: #999;
+}
+
+
+div.wrap div {
+    position: relative;
+
+    margin: 30px 0;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    margin: 5px;
+    padding: 0 10px;
+    background-color: transparent;
+    -webkit-transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+    transition: top .2s ease-in-out,
+    font-size .2s ease-in-out;
+}
+
+.active {
+    top: -25px;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
+
+input[type=email] {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+}
+
+input[type=password] {
+    width: 70%;
+    padding: 20px;
+    border: 1px solid white;
+    font-size: 20px;
+    background-color: cadetblue;
+    color: white;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+input[type=password]:focus {
+    outline: none;
+}
+
+table {
+    width: auto;
+    top: 0;
+    font-size: 15px;
+margin: auto;
+
+    background-color: transparent;
+    border-collapse: separate;
+    border: #ffffff 2px solid;
+}
+
+tr{
+    margin: 15px;
+    padding:15px;
+
+}
+
+th{
+    margin: 15px;
+    padding:15px;
+
+}
+
+.botonTabla{
+    text-align: center;
+}
